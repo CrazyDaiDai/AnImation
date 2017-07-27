@@ -20,9 +20,9 @@ class ViewController: UIViewController {
          public let kCAMediaTimingFunctionDefault: String
          */
         redLayer.add(createBasicAnimation(fromeValue: redLayer.position, toValue: .init(x: 300, y: 130), timingFunction: kCAMediaTimingFunctionLinear), forKey: "linear")
-        greenLayer.add(createBasicAnimation(fromeValue: greenLayer.position, toValue: .init(x: 300, y: 250), timingFunction: kCAMediaTimingFunctionEaseIn), forKey: "linear")
-        blueLayer.add(createBasicAnimation(fromeValue: blueLayer.position, toValue: .init(x: 300, y: 370), timingFunction: kCAMediaTimingFunctionEaseOut), forKey: "linear")
-        grayLayer.add(createBasicAnimation(fromeValue: grayLayer.position, toValue: .init(x: 300, y: 490), timingFunction: kCAMediaTimingFunctionEaseInEaseOut), forKey: "linear")
+        greenLayer.add(createBasicAnimation(fromeValue: greenLayer.position, toValue: .init(x: 300, y: 250), timingFunction: kCAMediaTimingFunctionEaseIn), forKey: "easeIn")
+        blueLayer.add(createBasicAnimation(fromeValue: blueLayer.position, toValue: .init(x: 300, y: 370), timingFunction: kCAMediaTimingFunctionEaseOut), forKey: "easeOut")
+        grayLayer.add(createBasicAnimation(fromeValue: grayLayer.position, toValue: .init(x: 300, y: 490), timingFunction: kCAMediaTimingFunctionEaseInEaseOut), forKey: "easeInEaseOut")
     }
 
 // 平移
